@@ -1,0 +1,152 @@
+.container{
+  justify-content: center;
+  padding: 0rem 0rem 0rem 0rem;
+  gap: 6rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+
+}
+.hero{
+  background-image: url(https://img.freepik.com/vector-premium/fondo-abstracto-azul-blanco-onda_41084-451.jpg?w=2000);
+  background-size: 1350px 700px;
+  width: 1350px;
+  height: 555px;
+}
+
+.portada{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+
+}
+.color{
+  position: absolute;
+  width: 540px;
+  height: 389px;
+  background: #142630;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 56px;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+}
+.img-tienda{
+   width: 578px;
+   height: 403px;
+   max-width: 100%;
+   border-radius: 15px;
+
+}
+
+.titulo{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 155.7%;
+
+text-transform: capitalize;
+font-feature-settings: 'pcap' on, 'kern' off;
+
+color: #104481;
+}
+
+
+.texto{
+   
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-transform: lowercase;
+
+}
+
+.icons-1{
+  flex-direction: row;
+  display: flex;
+  margin-left: 50rem;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.icons-2{
+  flex-direction: row;
+  display: flex;
+  gap: 1rem;  
+  justify-content: center;
+  padding-top: 2em;
+  justify-content: center;
+  padding-bottom: 5px;
+
+}
+.icons{
+  width: 33px;
+  height: 33px;
+}
+
+.text{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 12px;
+text-transform: uppercase;
+color: #000000;
+margin-top: 10px;
+
+}
+
+.number-wsp{  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+text-transform: uppercase;
+margin-top: 5px;
+color: #000000;
+}
+
+.text-ubicacion{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+  margin-top: 5px;
+
+}
+
+.boton {
+width: 225.08px;
+height: 66.48px;
+border-radius: 38px;
+background: #142630;
+border: #142630;
+gap: 1px;
+color: #ffff;
+}
+.carrito{
+  width: 56px;
+  height: 50px;
+}
+.text.carrito{
+  justify-content: center;
+}
+
+@media screen and (min-width:800px){
+.container{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-flow: row wrap;
+}
+}
