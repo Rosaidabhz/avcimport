@@ -22,28 +22,29 @@
 }
 .color{
   position: absolute;
-  width: 540px;
-  height: 389px;
+  width: 458px;
+  height: 69px;
   background: #142630;
   border-radius: 15px;
-  margin-top: 30px;
-  margin-left: 56px;
+  top: 7rem;
+  margin-left: 41rem;
 }
 
 .img{
   display: flex;
   flex-direction: row;
+  padding-top: 2.5rem;
 }
 .img-tienda{
    width: 578px;
-   height: 403px;
+   height: 353px;
    max-width: 100%;
    border-radius: 15px;
 
 }
 
 .titulo{
-  font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 44px;
@@ -72,7 +73,9 @@ text-transform: lowercase;
   display: flex;
   margin-left: 50rem;
   gap: 1rem;
-  padding-top: 1rem;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  position: absolute;
 }
 
 .icons-2{
@@ -80,9 +83,9 @@ text-transform: lowercase;
   display: flex;
   gap: 1rem;  
   justify-content: center;
-  padding-top: 2em;
+  padding-top: 6rem;
   justify-content: center;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 
 }
 .icons{
@@ -97,7 +100,7 @@ font-weight: 400;
 font-size: 15px;
 line-height: 12px;
 text-transform: uppercase;
-color: #000000;
+color: #0c0c0c;
 margin-top: 10px;
 
 }
@@ -110,7 +113,7 @@ font-size: 15px;
 line-height: 30px;
 text-transform: uppercase;
 margin-top: 5px;
-color: #000000;
+color: #fcfbfb;
 }
 
 .text-ubicacion{
@@ -120,26 +123,44 @@ color: #000000;
   font-size: 14px;
   line-height: 12px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+
+.botonn{
+  flex-direction: row;
+  display: flex;
+  width: 260.08px;
+  height: 60.48px;
+  background: #142630;
+  border: #142630;
+  border-radius: 38px;
 
 }
 
 .boton {
-width: 225.08px;
-height: 66.48px;
-border-radius: 38px;
-background: #142630;
-border: #142630;
-gap: 1px;
-color: #ffff;
+  background: #142630;
+  border: #142630;
+  border-radius: 38px;
+  color: #ffff;
+
 }
+
 .carrito{
   width: 56px;
-  height: 50px;
+  height: 60px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.text.carrito{
-  justify-content: center;
+.textcarrito{
+  padding-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  font-family: 'Poppins';
+
 }
 
 @media screen and (min-width:800px){
