@@ -1,0 +1,113 @@
+.Escuela__en__linea__container{
+    background-color: white;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 2rem 0 2rem 0rem;
+    display: flex;
+ }
+ 
+ .Escuela__en__linea__left{
+     justify-content: center;
+     flex-direction: row;
+     margin-right: 5rem;
+ }
+ 
+ .Escuela__en__linea{
+     justify-content: center;
+     flex-direction: row;
+ }
+ .Escuela__en__linea_img{
+     width: 478px;
+     height: 403px;
+     left: 137px;
+     max-width: 100%;
+     float: left;
+ }
+ 
+ .Escuela__en__linea__titulo{
+    font-family: 'Poppins';
+    font-style: normal;
+     font-weight: 500;
+     font-size: 26px;
+     line-height: 38px;
+     text-transform: uppercase;
+     color: #104481;
+     margin-bottom: 1REM;
+     margin-top: 4rem;
+ }
+ 
+ 
+ .Escuela__en__linea__texto{
+     
+    font-family: 'Poppins';
+    font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 23px;
+     color: #000000;
+     text-transform: lowercase;
+
+ }
+ 
+ .tarjetas__boton {
+     width: 125px;
+     margin-top: 20rem;
+     font-size: 15px;
+     font-weight: 400;
+     color: #f3f4f5;
+     padding: .65rem 1rem;
+     text-decoration: none;
+     display: flex;
+     margin-top: 34px;
+     justify-content:center;
+     font-family: 'Poppins';
+    }
+ 
+ 
+ .tarjetas__boton--more {
+     border: 1px solid #142630;
+     border-radius: 8px;
+     background: #142630;
+     width: 40%;
+ }
+ 
+ @media screen and (min-width:800px){
+ .Escuela__en__linea__containe__container{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-flow: row wrap;
+ }
+ }
+ 
+.contenedor{
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.titulo{
+	border-bottom: 3px solid #4B809E;
+  color: #f3f4f5;
+  font-family: 'Poppins';
+}
+.titulo .shape{
+	background: #4B809E;
+    padding: 10px 20px;
+    max-width: 300px;
+    position: relative;
+}
+.right-skew:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  display: block;
+  width: 50px;
+  background: #4B809E;
+  -webkit-transform: skew(-10deg);
+  -ms-transform: skew(-10deg);
+  transform: skew(20deg);
+}
