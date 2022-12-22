@@ -3,8 +3,14 @@
 a{
   text-decoration: none;
   transition: .25s;
+
 }
 
+.logo-link{
+  width: 150px;
+  height: 100px;
+  margin-top: 0px;
+}
 p{
   color: var(--gray-color);
   font-size: .875em;
@@ -12,75 +18,153 @@ p{
   line-height: 1.5;
   margin: 1em 0;
 }
-
-/* CONTAINERS STYLES */
-
-.flex-container{
+/*Start Mutual*/
+p, .a-CTA, input, header .navigation-bar a, .copyright li, .contact .form form label, .contact .form form button {
+  font-family: Cabin, sans-serif;
+}
+.fa-asterisk, .a-CTA, h2, header .navigation-bar a:hover, header nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
+  color: #002da9;
+}
+header nav .navigation-bar .underline, header .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
+  background-color: #0074a9;
+}
+header .navigation-bar ul li, header .text, .about-us .text, .reservation .text, .menu .box-model, .menu .text, .fixed-image .text, footer, .copyright, .contact .text i {
+  text-align: center;
+}
+header nav, header .navigation-bar ul, .about-us, .reservation, .about-us .image-container, .reservation .image-container, .menu, .menu .menu-image-container, footer .contact-container, .copyright ul, .contact {
   display: flex;
-  gap: 1px;
 }
+header nav .toggle, header nav .toggle span, header .navigation-bar, header .navigation-bar ul, .menu .box-model .close, footer .social-media .links a, .copyright .CTA li a {
+  transition: .3s;
+}
+header, header nav .toggle span, header .navigation-bar a, header .text, header .text .arrow .left, header .text .arrow .right, .recipes, .menu .box-image-container, .fixed-image .text, .copyright, .copyright .arrow-up {
+  position: relative;
+}
+header nav .toggle, header .navigation-bar .underline, header .text .arrow .left:after, header .text .arrow .right:after, header .svg-down, header .arrow-down, .recipes .text, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .box-image-container .box-image, .copyright .svg-up {
+  position: absolute;
+}
+.recipes .text, .fixed-image .text, .menu .box-image-container, .menu .box-image-container .box-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header nav, header .navigation-bar a:hover .underline, header .navigation-bar li.active .underline, .menu .box-model, .menu .box-image-container, .menu .box-image-container .box-image {
+  width: 100%;
+}
+button, .dots > div, header nav .toggle, header .arrow-down, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .menu-image-container .image img, footer .newsletter i, .copyright .arrow-up {
+  cursor: pointer;
+}
+.dots .active, header nav.active, header nav.active .toggle.active span, header nav .toggle span, header .navigation-bar .underline, header .text .arrow .left, header .text .arrow .right, header .text .button button, .contact form button {
+  background-color: rgb(10, 10, 10);
+}
+h1, h3, header .navigation-bar a, header .text span, .menu .box-model .close:hover, footer .text h2, footer .text p, footer .social-media .links a, .contact .text i, .contact .form form button {
+  color: rgb(8, 0, 0);
+}
+header nav, header .navigation-bar.show, header .navigation-bar a:hover .underline, header .navigation-bar li.active .underline, header .text .arrow .left:after, .menu .box-model, .copyright .arrow-up {
+  left: 0;
+}
+header .text .arrow .left:after, header .text .arrow .right:after, header .text span, footer .social-media .links a, footer .newsletter i, .copyright .arrow-up, .contact .text i, .contact .form form label {
+  display: inline-block;
+}
+/*End Mutual*/
 
-/* HEADER NAV */
-.logo-link{
-width: 150px;
-height: 100px;
+/*Start Header*/
+header {
+  height: 100px;
+  background-size: cover;
+  padding: 20px 10px;
 }
-.header-nav{
-  align-items: center;
-  flex-direction: column;
-  gap: 1px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-
+header nav {
+  top: 0;
+  z-index: 20;
 }
-.header-menu{
-  flex-wrap: wrap;
-  justify-content: center;  
+header nav .toggle {
+  display: none;
+  top: 26px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
 }
-.header-menu-link{
-  color: var(--gray-color);
+header nav .toggle:focus {
+  outline: none;
+}
+header nav.active .toggle span {
+  background-color: #000;
+}
+header nav .toggle.active {
+  left: 32%;
+}
+header nav .toggle.active .first {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+header nav .toggle.active .last {
+  top: 0;
+  transform: rotate(45deg);
+}
+header nav .toggle .hide {
+  transition: 0s;
+  visibility: hidden;
+}
+header nav .toggle span {
   display: block;
-  font-size: .75em;
-  font-weight: 500;
-  padding: .5em .75em;
-  text-transform: uppercase;
-  font-size: 14px;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
 }
-.header-menu-link:hover{
-  color: var(--dark-color);
-  text-decoration: underline;
+header nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
 }
-.ghost-button{
-  background: #4B809E;
-  border-radius: 37px; 
-  width: 222px;
-  height: 31px;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+header nav .logo {
+  flex-basis: 36%;
+  padding-left: 50px;
 }
-.lista{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-color: #FFFFFF;
-margin-top: 5px;
+header .navigation-bar.show {
+  width: 40%;
 }
-.text{
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-    font-family: 'Poppins';
-    margin-left: 2rem;
-    
+header .navigation-bar.show a {
+  color: rgb(3, 2, 2) !important;
+  margin-left: 20px;
+
+}
+header .navigation-bar.show a:hover {
+  color: rgb(0, 0, 0) !important;
+}
+header .navigation-bar ul li {
+  flex: 1;
+  padding: 0 10px;
+}
+header .navigation-bar a {
+  text-decoration: none;
+  transition: all .5s;
+  font-size: 16px;
+}
+header nav.active .navigation-bar a {
+  color: #000;
+}
+header .navigation-bar .underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  transition: all .3s;
+  display: block;
+
+}
+header .text {
+  top: 24%;
+}
+header .text h1 {
+  margin-bottom: 0;
+}
+.navigation-bar{
+  margin-top: 20px;
+
 }
 
-.ghost-button:hover{
-  background: var(--gray-color);
-  color: var(--light-color);
-}
+/*End Header*/
 
 
 @media only screen and (min-width: 1024px){ 
@@ -108,3 +192,73 @@ margin-top: 5px;
     font-size: .75em;
   } 
 }
+
+
+@media (max-width: 992px) {
+  body {
+      padding: 0;
+  }
+  .dots {
+      display: none;
+  }
+  header nav .logo {
+      padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+      display: block;
+      text-align: center;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding-top: 25px;
+  }
+  header nav .toggle {
+      display: block;
+  }
+  header .navigation-bar {
+      position: fixed;
+      top: 0;
+      left: -174px;
+      height: 100%;
+      background-color: #c9c9c9;
+      overflow: hidden;
+      z-index: 20;
+      padding: 40px;
+  }
+  header .navigation-bar ul {
+      display: block;
+      padding-top: 40px;
+  }
+  header .navigation-bar ul li {
+      text-align: left;
+      padding: 14px 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+  h3, h1 {
+      font-size: 40px;
+  }
+  h2 {
+      font-size:90px
+  }
+  header {
+      padding: 0;
+  }
+  header nav .logo {
+      padding-left: 0;
+  }
+  header nav .toggle.active {
+      left: 36%;
+  }
+  header .navigation-bar.show {
+      padding: 0px;
+      width: 35%;
+      height: 100%;
+  }
+}
+/*End Home Page Responsive*/
