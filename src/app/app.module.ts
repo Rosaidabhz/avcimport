@@ -7,6 +7,7 @@ import { PortadaComponent } from './components/portada/portada.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { YouTubePlayerModule } from "@angular/youtube-player";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductosComponent } from './components/productos/productos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

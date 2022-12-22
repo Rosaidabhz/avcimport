@@ -10,11 +10,14 @@
      justify-content: center;
      flex-direction: row;
      margin-right: 5rem;
+     margin-top: 1rem;
  }
  
  .Escuela__en__linea{
      justify-content: center;
      flex-direction: row;
+     margin-top: 1rem;
+
  }
  .Escuela__en__linea_img{
      width: 478px;
@@ -28,12 +31,12 @@
     font-family: 'Poppins';
     font-style: normal;
      font-weight: 500;
-     font-size: 26px;
+     font-size: 30px;
      line-height: 38px;
      text-transform: uppercase;
      color: #104481;
      margin-bottom: 1REM;
-     margin-top: 4rem;
+     margin-top: 0rem;
  }
  
  
@@ -355,8 +358,6 @@
         rgba(255 255 255 / 0%) 60%,
         rgba(20 150 250 / 50%) 100%
       );
-      -webkit-mask: linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
       -webkit-mask-composite: destination-out;
       mask-composite: exclude;
       user-select: none;
