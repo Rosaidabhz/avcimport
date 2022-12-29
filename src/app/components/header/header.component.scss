@@ -213,7 +213,7 @@ header .text h1 {
       left: 0;
       top: 0;
       width: 100%;
-      padding-top: 25px;
+      padding-top: 0px;
   }
   header nav .toggle {
       display: block;
@@ -221,7 +221,7 @@ header .text h1 {
   header .navigation-bar {
       position: fixed;
       top: 0;
-      left: -174px;
+      left: -200px;
       height: 100%;
       background-color: #c9c9c9;
       overflow: hidden;
@@ -253,11 +253,11 @@ header .text h1 {
       padding-left: 0;
   }
   header nav .toggle.active {
-      left: 36%;
+      left: 50%;
   }
   header .navigation-bar.show {
       padding: 0px;
-      width: 35%;
+      width: 50%;
       height: 100%;
   }
 }
