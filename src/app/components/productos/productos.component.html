@@ -1,0 +1,11 @@
+<section class="all-products">
+<div class="bg_cart">
+    <div class="product" *ngFor="let product of products">
+      <img class="imagen" src="assets/product_images/{{product.image}}">
+      <h2 class="title-producto" >{{product.name}}</h2>
+      <h3 class="cod" >{{product.weight}}</h3>
+      <h3 class="precio"><strong></strong>{{product.price}} c/u dolares</h3>
+      <i class="material-icons add_shopping_cart" (click)="addToCart(product)">agregar al carrito</i>
+    </div>
+</div>
+</section>

@@ -8,19 +8,21 @@ import { HeaderComponent } from './components/header/header.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { YouTubePlayerModule } from "@angular/youtube-player";
-
+import { ListCartComponent } from './components/list-cart/list-cart.component';
+import { products } from './components/products';
 @NgModule({
   declarations: [
     AppComponent,
     PortadaComponent,
     HeaderComponent,
     SobreComponent,
-    ProductosComponent
+    ProductosComponent,
+    ListCartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

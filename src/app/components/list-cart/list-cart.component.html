@@ -1,0 +1,11 @@
+<div class="product" *ngFor="let item of items">
+    <img class="coffe_bag" src="assets/product_images/{{item.image}}">
+    <h2>{{item.name}}</h2>
+    <h3>{{item.weight}}</h3>
+    <h3><strong>Precio: </strong>{{item.price}}</h3>
+    <h4>Cantidad: {{item.amount}}</h4>
+    <h4>Sub-Total: {{item.amount * item.price}}</h4>
+    <span><a (click)="cart.reduceAmount(item); item.amount === 0 ? removeProduct(item) : ''"><i class="material-icons ">delete</i></a></span>
+  </div>
+  <h4>Total: {{totalPrice}} </h4>
+  <button (click)="sendWhatsapp()">Enviar por Whatsapp</button>
