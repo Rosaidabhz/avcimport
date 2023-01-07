@@ -78,30 +78,30 @@ color: #5A2100;
 .botonn{
   flex-direction: row;
   display: flex;
-  width: 220px;
-  height: 60.48px;
+  width: 150px;
+  height: 50px;
   background: #142630;
   border: #142630;
   border-radius: 38px;
 }
 
 .cart{
-  width: 56px;
-  height: 60px;
-  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
   .boton {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #f3f4f5;
     text-decoration: none;
     display: flex;
     font-family: 'Poppins';
-    margin-top: 20px;
-    margin-left: 15px;
+    margin-top: 15px;
+    margin-left: 5px;
   }
   
   .icons-2{
@@ -181,7 +181,7 @@ background: #8BD5FF;
   }
   
   .img-tienda{
-    width: 100%;
+    width: 390px;
     height: 263px;
     left: -2px;
     top: 110px;
@@ -244,14 +244,19 @@ margin-top: 25rem;
 }
 .botonn{
   position: absolute;
-  width: 192.57px;
+  flex-direction: row;
+  width: 150px;
   height: 50px;
-margin-left: 31rem;
+  background: #142630;
+  border: #142630;
+  border-radius: 38px;
+margin-left: 32.5rem;
 margin-top: 35rem;
 }
 
 .boton{
-  font-size: 12px;
+  font-size: 10px;
+  margin-top: 20px;
 }
 .cart{
   width: 50px;

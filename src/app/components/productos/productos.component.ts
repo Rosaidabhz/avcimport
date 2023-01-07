@@ -7,4 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductosComponent implements OnInit{
   ngOnInit(): void {
-  }}
+    
+  }
+
+}

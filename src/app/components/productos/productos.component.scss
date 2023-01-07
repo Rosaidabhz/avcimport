@@ -1,0 +1,102 @@
+header {
+    background: rgb(94, 0, 0);
+    padding: 10px 0;
+}
+
+header h4 {
+    color: #fff;
+    cursor: pointer;
+}
+
+header h4:focus {
+    outline: none;
+    border: none;
+}
+
+.cart_icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart_icon:focus {
+    outline: none;
+    border: none;
+}
+
+.cart_icon i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.cart_value {
+    position: absolute;
+    top: -16px;
+    right: -32px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 4px 10px;
+    font-weight: 800;
+    font-size: 16px;
+}
+.cart_section {
+    padding: 40px 0;
+}
+
+table {
+    font-family: arial,
+        sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color:
+        #dddddd;
+}
+
+.btn {
+    background:
+        rgb(94, 0, 0);
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 8px;
+}
+
+.content span {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.cart_section h3 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.delete {
+    border: 1px solid rgb(247, 14, 14);
+    cursor: pointer;
+}
+
+.delete i {
+    font-size: 18px;
+    color: rgb(248, 2, 2);
+}
+
+.removeall {
+    background: #df0000;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #b00000;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 14px;
+}
