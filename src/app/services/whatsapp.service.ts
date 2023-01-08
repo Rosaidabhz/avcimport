@@ -15,7 +15,7 @@ export class WhatsappService {
   }
   
   contact(product: string):string{
-    this.skipLine('Estoy interesado/a en estos productos'+' '+product+' ');
+    this.skipLine('Estoy interesado/a en este producto'+' '+product+' ');
     return this.url
 
   }

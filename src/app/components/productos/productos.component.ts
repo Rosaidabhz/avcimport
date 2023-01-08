@@ -22,7 +22,7 @@ export class ProductosComponent implements OnInit{
 
   addToCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number;   }) {
   this.cart.addToCart(product);
-  window.alert('Producto agregado ' + product.name)
+  window.alert('Producto agregado al carrito: ' + product.name)
 }
 
 filterProducts() {

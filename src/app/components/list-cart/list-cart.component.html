@@ -1,11 +1,13 @@
-<div class="product" *ngFor="let item of items">
-    <img class="coffe_bag" src="assets/product_images/{{item.image}}">
+ <h4 class="precio-total">Total: {{totalPrice}} dolares </h4>
+  <button class="boton-wsp"  (click)="sendWhatsapp()"><a class="text-wsp">Enviar pedido por Whatsapp</a></button>
+  <div class="product" *ngFor="let item of items">
+  <img class="image-product" src="assets/product_images/{{item.image}}">
+    <div class="valor">
     <h2>{{item.name}}</h2>
     <h3>{{item.weight}}</h3>
     <h3><strong>Precio: </strong>{{item.price}}</h3>
     <h4>Cantidad: {{item.amount}}</h4>
     <h4>Sub-Total: {{item.amount * item.price}}</h4>
-    <span><a (click)="cart.reduceAmount(item); item.amount === 0 ? removeProduct(item) : ''"><i class="material-icons ">delete</i></a></span>
-  </div>
-  <h4>Total: {{totalPrice}} </h4>
-  <button (click)="sendWhatsapp()">Enviar por Whatsapp</button>
+    <span class="delete"><a (click)="cart.reduceAmount(item); item.amount === 0 ? removeProduct(item) : ''"><i class="material-icons ">delete</i></a></span>
+</div></div>
+ 

@@ -164,6 +164,12 @@ header .text h1 {
 
 }
 
+.add_shopping_cart {
+float: right;
+margin-left: 36rem;
+margin-top: 10px;
+}
+
 /*End Header*/
 
 
@@ -191,6 +197,12 @@ header .text h1 {
   .ghost-button{
     font-size: .75em;
   } 
+  .add_shopping_cart {
+    float: right;
+    position: absolute;
+    display: flex;
+    top: 10px;
+  }
 }
 
 
@@ -203,6 +215,12 @@ header .text h1 {
   }
   header nav .logo {
       padding-left: 0;
+  }
+  .add_shopping_cart {
+    float: right;
+    position: absolute;
+    display: flex;
+  top: 10px;
   }
 }
 
@@ -236,7 +254,12 @@ header .text h1 {
       text-align: left;
       padding: 14px 0;
   }
-
+  .add_shopping_cart {
+    float: right;
+    position: absolute;
+    display: flex;
+  top: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -259,6 +282,13 @@ header .text h1 {
       padding: 0px;
       width: 50%;
       height: 100%;
+  }
+  .add_shopping_cart {
+    float: right;
+    position: absolute;
+    display: flex;
+    top: 5px;
+  margin-left: 330px;
   }
 }
 /*End Home Page Responsive*/
