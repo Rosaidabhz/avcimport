@@ -44,17 +44,8 @@
      text-transform: lowercase;
 
  }
- 
- @media screen and (min-width:800px){
- .about-us{
-     width: 100%;
-     height: auto;
-     display: flex;
-     flex-flow: row;
- }
- }
- 
-.contenedor{
+  
+ .contenedor{
 	max-width: 1200px;
 	width: 90%;
 	margin: 0 auto;
@@ -150,10 +141,9 @@
 .tarjetas__texto {
     line-height: 25px;
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 16px;
     text-align:center;
-
-
+    color: #000;
 }
 .tarjetas__boton {
     font-size: 1.2rem;
@@ -164,6 +154,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
+    font-size: 15px;
     margin-top: 34px;
     justify-content:center;
 }
@@ -184,31 +175,56 @@
 .tarjetas__boton--mega {
     border: 1px solid #003a0f;
     border-radius: 8px;
-    color: #000000;
+    color: #072900;
 }
 
-  .container {
-    padding: 30px;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    align-items: center;
-    justify-items: center;
-  }
-  @media (max-width: 390px) {
-    .about-us-left{
-      position: absolute;
-     justify-content: center;
-    }
 
-  .about-us-container{
+
+  @media (max-width: 576px) {
+    .about-us{
+        background-color: white;
+        background-repeat: no-repeat;
+        justify-content: center;
+        padding: 0rem;
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+     }
+     
+     .about-us-left{
+         justify-content: center;
+         flex-direction: column;
+         margin-right: 5rem;
+         margin-top: 1rem;
+     }
+     
+     .about-us-container{
+         justify-content: center;
+         flex-direction:column;
+         margin-top: 1rem;
+    
+     }
+    
+     .about-us-title{
+        font-family: 'Poppins';
+        font-style: normal;
+         font-weight: 500;
+         font-size: 30px;
+         line-height: 38px;
+         text-transform: uppercase;
+         color: #104481;
+         margin-bottom: 1REM;
+         margin-top: 0rem;
+     }
+     
+     
+   .video{
+    display: flex;
     justify-content: center;
-    margin-top: 18rem;
-    text-align: center;
-  }
+    height: auto;
+    margin-left: 4rem;
+   }
 
   .tarjetas {
     display: flex;
@@ -227,7 +243,6 @@
 }
 
 .about-us-text{
-     
   font-family: 'Poppins';
   font-style: normal;
    font-weight: 400;
